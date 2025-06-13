@@ -1,4 +1,3 @@
-// bar hours
 const numberHours = document.querySelector(".number-hours");
 
 const numberElements = [];

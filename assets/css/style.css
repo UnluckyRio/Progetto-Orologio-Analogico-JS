@@ -1,4 +1,5 @@
 * {
+  font-family: "Quicksand", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -22,7 +23,7 @@ h1 {
   text-align: center;
   color: white;
   margin-bottom: 100px;
-  text-shadow: 0 0 10px white;
+  text-shadow: 0 0 3px black;
 }
 
 .wrapper {
@@ -34,8 +35,8 @@ h1 {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(30px);
-  border: 2px solid white;
-  box-shadow: 0 0 10px white;
+  border: solid 1px white;
+  box-shadow: 0 0 3px black;
 }
 
 .bar-seconds,
@@ -49,15 +50,15 @@ h1 {
 .number-hours span {
   position: absolute;
   transform: rotate(calc(var(--index) * 30deg));
-  inset: 15px;
+  inset: 20px;
   text-align: center;
 }
 
 .number-hours span p {
   transform: rotate(calc(var(--index) * -30deg));
-  font-size: 52px;
-  color: #00eeff;
-  text-shadow: 0 0 10px #00eeff;
+  font-size: 50px;
+  color: white;
+  text-shadow: 0 0 3px black;
 }
 
 .bar-seconds span {
@@ -72,13 +73,13 @@ h1 {
   width: 2px;
   height: 12px;
   background: #00eeff;
-  box-shadow: 0 0 10px #00eeff;
+  box-shadow: 0 0 3px black;
   border-radius: 2px;
 }
 
 .bar-seconds span:nth-child(5n) p {
   background: white;
-  box-shadow: 0 0 10px white;
+  box-shadow: 0 0 3px black;
   width: 6px;
   height: 18px;
   transform: translateY(2px);
@@ -113,7 +114,7 @@ h1 {
   width: 8px;
   height: 160px;
   background: #00eeff;
-  box-shadow: 0 0 10px #00eeff;
+  box-shadow: 0 0 3px black;
 }
 
 .hand-box .minute {
@@ -129,7 +130,7 @@ h1 {
   width: 25px;
   height: 25px;
   background: #00eeff;
-  box-shadow: 0 0 10px #00eeff;
+  box-shadow: 0 0 3px black;
   border-radius: 50%;
 }
 
@@ -137,7 +138,7 @@ h1 {
   width: 8px;
   height: 225px;
   background: #00eeff;
-  box-shadow: 0 0 10px #00eeff;
+  box-shadow: 0 0 3px black;
 }
 
 .hand-box .second {
@@ -153,7 +154,7 @@ h1 {
   width: 20px;
   height: 20px;
   background: white;
-  box-shadow: 0 0 10px white;
+  box-shadow: 0 0 3px black;
   border-radius: 50%;
 }
 
@@ -161,5 +162,32 @@ h1 {
   width: 4px;
   height: calc(240px + 70px);
   background: white;
-  box-shadow: 0 0 10px white;
+  box-shadow: 0 0 3px black;
+}
+
+/* FOOTER */
+footer {
+  width: 100%; /* Larghezza del footer */
+  text-align: center; /* Centra il testo del footer */
+  padding: 10px; /* Padding interno per il footer */
+  font-family: "Quicksand", sans-serif; /* Font del footer */
+  font-size: 1rem; /* Dimensione del testo del footer */
+  margin-top: auto; /* Spinge il footer in fondo alla pagina */
+  position: relative; /* Posizione relativa per il footer */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 3px black; /* Colore di sfondo del footer */
+  border-top: solid 2px white; /* Bordo superiore per il footer */
+  color: #fff; /* Colore del testo del footer */
+  text-decoration: none; /* Rimuove la sottolineatura dal testo del footer */
+}
+/* Footer <a/> style */
+footer a {
+  color: #fff; /* Colore del link nel footer */
+  text-decoration: none; /* Rimuove la sottolineatura dal link */
+}
+footer a:hover {
+  color: #00eeff; /* Colore del link attivo nel footer */
+  cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+  text-decoration: underline; /* Sottolinea il link al passaggio del mouse */
 }
