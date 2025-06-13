@@ -9,8 +9,6 @@ for (let i = 1; i <= 12; i++) {
 
 numberHours.insertAdjacentHTML("afterbegin", numberElements.join(""));
 
-// bar seconds
-
 const barSeconds = document.querySelector(".bar-seconds");
 
 const barElements = [];
@@ -21,8 +19,19 @@ for (let i = 1; i <= 60; i++) {
 
 barSeconds.insertAdjacentHTML("afterbegin", barElements.join(""));
 
-// bar minutes
-
 const handHour = document.querySelector(".hand.hour");
 const handMinute = document.querySelector(".hand.minute");
 const handSecond = document.querySelector(".hand.second");
+
+function getCurrentTime() {
+  let date = new Date();
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+  let seconds = date.getSeconds();
+
+  handHour.style.transform = `rotate(${hours * 30 + minutes / 2}deg)`;
+  handMinute.style.transform = `rotate(${minutes * 6}deg)`;
+  handSecond.style.transform = `rotate(${seconds * 6}deg)`;
+}
+
+setInterval(getCurrentTime, 1000);
